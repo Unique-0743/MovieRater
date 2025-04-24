@@ -76,5 +76,5 @@ print("Performance:")
 print(pd.DataFrame([train_metrics, test_metrics], index=["Train","Test"]))
 
 # saving model.pkl file.
-joblib.dump(best_xgb, r"D:\datascience\best_model_xgb.pkl")
+joblib.dump(best_xgb, r"D:\datascience\model.pkl")
 print("model.pkl file saved")

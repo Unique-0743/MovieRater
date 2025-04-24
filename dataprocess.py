@@ -2,7 +2,7 @@
 import pandas as pd
 import numpy as np
 
-df = pd.read_csv(r"D:\datascience\IMDb Movies India.csv", encoding="latin1") # load dataset and encode it to make it understand to the system.
+df = pd.read_csv(r"IMDb Movies India.csv", encoding="latin1") # load dataset and encode it to make it understand to the system.
 # later start cleaning the data so that we can utilise it more efficiently.
 df["Votes"] = (df["Votes"]
     .astype(str).str.replace(",", "", regex=True)

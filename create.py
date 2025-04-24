@@ -28,6 +28,7 @@ X_train_df, X_test_df, y_train, y_test = train_test_split(X, y, test_size=0.2, r
 scaler = StandardScaler()
 X_train = scaler.fit_transform(X_train_df)
 X_test  = scaler.transform(X_test_df)
+joblib.dump(scaler, "scaler.pkl")
 
 # accuracy calculator(with 0.5 value tolerance)
 def acc_within_half(y_true, y_pred):

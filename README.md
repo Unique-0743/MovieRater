@@ -41,5 +41,7 @@ The custom accuracy is calculated using the following function:</i></br>
 def acc_within_half(y_true, y_pred):
     return np.mean(np.abs(y_true - y_pred) <= 0.5)
 ```
-<img src="github.com/Unique-0743/MovieRater/main/results.png" alt="Local Image" width="300"/>
+## Below I attached the screenshot describing model performance and accuracy.
+![Alt Text](results.png)
+
 
